@@ -16,6 +16,11 @@
         <div class="nav-logo">
             <img src="/img/logo.png" alt="">
         </div>
+        <div class="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="navbar">
             <ul>
                 <li><a href="" class="current">Home</a></li>
@@ -282,6 +287,15 @@
                 toggle.parentNode.classList.toggle('active')
             })
         })
+
+        $('.menu-toggler').click(function () {
+            $(this).toggleClass("active");
+            $(".navbar").toggleClass("active");
+        });
+
+        $('.navbar').on("click", function () {
+            $('.menu-toggler').click();
+        });
     </script>
 
 </body>

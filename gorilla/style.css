@@ -44,6 +44,26 @@ nav {
     font-family: var(--nav-head);
 }
 
+.menu-toggler {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
 .nav-logo img {
     display: block;
     position: absolute;
@@ -615,12 +635,51 @@ input {
 }
 
 @media only screen and (max-width: 450px) {
+    .nav-logo img {
+        height: 68px;
+    }
+
+    .menu-toggler {
+        display: block;
+    }
+
     .navbar ul {
-        display: none;
+        flex-direction: column;
+    }
+
+    .navbar {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        /* background: linear-gradient(149.3deg, rgba(209, 22, 153, 0.15) 1.57%, rgba(107, 69, 221, 0.15) 100%); */
+        background-color: #1c202a;
+        top: 0;
+        right: -100%;
+        max-width: 250px;
+        padding: 80px 35px;
+        transition: .3s linear;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
     }
 
     nav {
-        height: 5.5rem;
+        height: 5.2rem;
     }
 
     .header {
