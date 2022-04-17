@@ -77,12 +77,17 @@ nav {
 
 .btn-grad {
     margin: 0 20px;
+    padding: 10px 20px;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
     border-radius: 20px;
     display: block;
     cursor: pointer;
+}
+
+.btn-grad a {
+    color: #fff;
 }
 
 .btn-grad:hover {
@@ -164,7 +169,7 @@ nav {
     display: block;
     height: 100%;
     width: 100%;
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
     margin: 8% 0;
 }
 
@@ -193,10 +198,11 @@ nav {
 .about-content h2 {
     font-size: 35px;
     font-family: var(--font-head);
+    margin: 0 0 20px;
 }
 
 .about-content p {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.125rem;
     text-align: justify;
     color: rgba(204, 204, 204, 0.829);
@@ -242,7 +248,7 @@ nav {
 
 .sec-img2>div img {
     width: 240px;
-    filter: brightness(0.5);
+    /* filter: brightness(0.8); */
     overflow: hidden;
 }
 
@@ -398,4 +404,329 @@ nav {
 
 .faq.active .faq-toggle {
     background-color: #9fa4a8;
+}
+
+/*  */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c202a;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0 1%;
+    color: rgba(204, 204, 204, 0.829);
+    font-family: var(--nav-head);
+}
+
+footer>div img {
+    display: block;
+    margin: 0 auto 20px;
+    height: 100px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.btn-subscribe {
+    position: relative;
+}
+
+input {
+    background-color: #1c202a;
+    border: 2px solid gainsboro;
+    border-radius: 25px;
+    height: 3.16rem;
+    padding: 8px 22px;
+    width: 476px;
+    margin: 20px;
+    display: block;
+    color: #fff;
+}
+
+.btn-subscribe a {
+    position: absolute;
+    bottom: 22px;
+    right: 23px;
+}
+
+.social-media i {
+    font-size: 28px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fa-twitter {
+    background-color: #3498db;
+    color: snow;
+}
+
+.fa-discord {
+    background-color: #738adb;
+    color: snow;
+}
+
+.fa-medium {
+    background-color: #fff;
+    color: #111;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1100px) {
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .header-img img {
+        height: 300px;
+    }
+
+    .btn a {
+        font-size: 14px;
+    }
+
+    .counters h3 {
+        font-size: 22px;
+    }
+
+    .counter {
+        font-size: 18px;
+    }
+
+    .about-img img {
+        height: 340px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .gorilla-img img {
+        height: 340px;
+    }
+
+    .roadmap h3 {
+        font-size: 24px;
+    }
+
+    .our-team h2 {
+        font-size: 24px;
+    }
+
+    .frequent h2 {
+        font-size: 24px;
+    }
+
+    input {
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    nav {
+        height: 6rem;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .nav-logo img {
+        height: 75px;
+    }
+
+    .navbar ul li {
+        padding: 10px 20px;
+    }
+
+    .header-img img {
+        height: auto;
+        width: 350px;
+    }
+
+    .header-content p {
+        letter-spacing: 0.066rem;
+    }
+
+    .btn a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .counters h3 {
+        font-size: 18px;
+    }
+
+    .counter {
+        font-size: 16px;
+    }
+
+    .roadmap img {
+        width: 100%;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .about-img img {
+        height: 290px;
+        width: auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content p {
+        letter-spacing: 0.06rem;
+        text-align: right;
+    }
+
+    .about-2 {
+        width: 520px;
+    }
+
+    .about-2 h3 {
+        font-size: 22px;
+    }
+
+    .sec-img2>div img {
+        height: 250px;
+    }
+
+    .gorilla-img img {
+        height: 280px;
+        width: 265px;
+    }
+
+    .team>img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .social-media i {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar ul {
+        display: none;
+    }
+
+    nav {
+        height: 5.5rem;
+    }
+
+    .header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-img img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .counters h3 {
+        font-size: 12px;
+    }
+
+    .counter {
+        font-size: 12px;
+    }
+
+    .about-img img {
+        margin-bottom: 10px;
+    }
+
+    .about-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-2 {
+        width: 310px;
+        padding: 5%;
+    }
+
+    .about-2 h3 {
+        font-size: 19px;
+    }
+
+    .about-2-img>img {
+        height: 80px;
+    }
+
+    .sec-img2>div img {
+        height: auto;
+        /* filter: brightness(0.5); */
+    }
+
+    .join-gorilla {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gorilla-img img {
+        display: block;
+        margin: 0 auto;
+        height: 230px;
+        width: 240px;
+    }
+
+    .team>img {
+        width: 150px;
+    }
+
+    .header-content h1,
+    .about-content h2,
+    .roadmap h3,
+    .our-team h2,
+    .frequent h2 {
+        font-size: 22px;
+    }
+
+    .faq {
+        padding: 22px;
+        font-size: 12px;
+    }
+
+    .faq-toggle {
+        font-size: 10.5px;
+        right: 18px;
+        top: 22px;
+        height: 19px;
+    }
+
+    .faq-container h3 {
+        font-size: 14px;
+    }
+
+    .social-media i {
+        font-size: 16px;
+    }
+
+    input {
+        height: 2.5rem;
+        width: 310px;
+    }
+
+    .btn-subscribe a {
+        font-size: 11px;
+        padding: 10px 14px;
+    }
+
+    footer>div img {
+        height: 70px;
+    }
+
+    footer h3,
+    footer p {
+        text-align: center;
+        font-size: 12px;
+    }
 }
