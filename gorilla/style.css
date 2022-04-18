@@ -15,6 +15,10 @@
     --font-head: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     width: 0.3em;
 }
@@ -221,7 +225,12 @@ nav {
     margin: 0 0 20px;
 }
 
-.about-content p {
+.about-content li {
+    list-style: circle;
+}
+
+.about-content p,
+li {
     font-size: 12px;
     letter-spacing: 0.125rem;
     text-align: justify;
