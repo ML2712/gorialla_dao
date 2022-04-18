@@ -660,7 +660,6 @@ input {
         position: fixed;
         height: 100vh;
         width: 100%;
-        /* background: linear-gradient(149.3deg, rgba(209, 22, 153, 0.15) 1.57%, rgba(107, 69, 221, 0.15) 100%); */
         background-color: #1c202a;
         top: 0;
         right: -100%;
