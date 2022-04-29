@@ -214,23 +214,35 @@ nav {
     height: 100%;
     width: 100%;
     /* filter: brightness(0.5); */
-    margin: 8% 0;
+    margin: 3% 0;
 }
 
 .btn-buy {
     position: absolute;
-    top: 72%;
-    left: 38%;
-    transform: translate(-10px, -10px);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50px, -10px);
 }
+
+.btn-buy a {
+    font-size: 22px;
+    padding: 20px 30px;
+    /* pointer-events: none; */
+}
+
+.btn-buy a:hover {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
 
 .about-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     color: #fff;
-    margin: 6%;
-    padding: 5% 8%;
+    margin: 3% 5%;
+    padding: 3% 5%;
 }
 
 .about-img img {
@@ -257,7 +269,7 @@ nav {
 
 .about-content p,
 li {
-    font-size: 19px;
+    /* font-size: 19px; */
     letter-spacing: 0.125rem;
     text-align: justify;
     color: rgba(204, 204, 204, 0.829);
@@ -271,7 +283,7 @@ li {
 
 .about-2 {
     display: block;
-    margin: 7% auto 11%;
+    margin: 5% auto 7%;
     height: 100%;
     width: 700px;
     color: #fff;
@@ -315,8 +327,8 @@ li {
 
 /*  */
 .gorilla {
-    margin: 7% 6% 2%;
-    padding: 5% 8%;
+    margin: 3% 5%;
+    padding: 3% 5%;
 }
 
 .join-gorilla {
@@ -337,7 +349,7 @@ li {
     font-size: 30px;
     font-family: var(--font-head);
     text-align: center;
-    margin: 13% 0 4%;
+    margin: 7% 0 4%;
 }
 
 .roadmap img {
@@ -448,7 +460,7 @@ figure.effect-sadie:hover p {
     margin: 0 auto;
     /* min-height: 100%; */
     /* max-width: 100%; */
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 10%;
 }
 
@@ -783,6 +795,15 @@ input {
         grid-gap: 0.5rem;
     }
 
+    .grid figure img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .grid figure {
+        width: 200px;
+    }
+
     .about-img img {
         height: 290px;
         width: auto;
@@ -944,7 +965,11 @@ input {
 
     .grid figure p {
         font-size: 13.5px;
-        padding: 20px;
+        padding: 8px;
+    }
+
+    .grid figure img {
+        height: 215px;
     }
 
     .header-content h1,
